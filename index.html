@@ -3,9 +3,30 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="" content="">
-    <title></title>
+    <style type="text/css" media="all">
+      .bg{
+        background: rgba(0,0,0,.8);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        filter: brightness(0.4);
+      }
+      .contenido{
+         position: relative;
+         z-index: 2;
+         color: #fff;
+      }
+        
+    </style>
+    <title>La motricidad</title>
   </head>
   <body>
+    <div class="bg" id="particles-js"></div>
+    <div class="contenido">
     <h1 class="titulo">Motricidad</h1>
     <p>Es la capacidad del ser humano para producir movimiento desde una parte hasta el todo, integrando acciones voluntarias e involuntarias, coordinadas e iniciadas desde el sistema muscular.</p>
 <h2>Clasificacion</h2>
@@ -24,10 +45,7 @@
 <h2>Caracteristicas</h2>
 <p>Las capacidades motrices, o llamadas también físicas, se caracterizan por factores energéticos y sensomotrices de la siguiente manera: </p>
 <h4>Caracteristicas condicionales</h4>
-<p>Están determinadas por factores energéticos que se liberan en el proceso de 
-intercambio de sustancias en el organismo humano, producto del trabajo físico. Estas 
-son capacidades energético-funcionales del rendimiento, que se desarrollan producto 
-de las acciones motrices consiente del individuo.</p>
+<p>Están determinadas por factores energéticos que se liberan en el proceso de intercambio de sustancias en el organismo humano, producto del trabajo físico. Estas son capacidades energético-funcionales del rendimiento, que se desarrollan producto de las acciones motrices consiente del individuo.</p>
 <h4>La fuerza</h4>
 <p>Es la capacidad que tiene el hombre para vencer o contrarrestar una resistencia externa a través del esfuerzo muscular.</p>
 <p>Se considera que la fuerza es una de las capacidades más importantes del hombre, por ser una de las premisas en el desarrollo de las demás capacidades motrices, existiendo una estrecha relación entre esta y las demás capacidades. </p>
@@ -84,5 +102,122 @@ de las acciones motrices consiente del individuo.</p>
 <h2>Beneficios</h2>
  
  <p>Todo ser humano necesita moverse, coger cosas, tirarlas, es por eso que el trabajo de la motricidad en las actividades de vida diaria y básicas cotidianas es muy importante para el desarrollo en los diferentes roles de la vida para su desempeño social, cultural, familiar, laboral, y que permite llevar calidad de vida en un mundo moderno y competitivo.</p> 
+    </div>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"  referrerpolicy="no-referrer"></script>
+    <script>
+      particlesJS('particles-js',
+      {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": ["circle", "edge", "triangle"],
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.3,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 10,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 80,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 300,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed": 5,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": true,
+        "rotateX": 800,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 800,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 800,
+        "size": 80,
+        "duration": 2,
+        "opacity": 0.8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+      )
+    </script>
   </body>
 </html>
