@@ -2,7 +2,10 @@
     font-family: sans-serif;
 }
 .titulo {
-    max-width: 750px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    max-width: 1580px;
     text-transform: uppercase;
     margin: 0;
     padding: 15px;
