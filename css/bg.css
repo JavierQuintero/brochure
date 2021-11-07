@@ -1,5 +1,6 @@
 .bg{
-    background: rgba(0,0,0,.8);
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -14,4 +15,29 @@
      position: relative;
      z-index: 2;
      color: #fff;
+  }
+
+
+
+
+  .glider-prev,
+  .glider-next{
+     animation: scalar 540ms ease-in 0.3s infinite  ;
+  }
+
+  /* Animaciones */
+
+  @keyframes scalar {
+     0%{
+        transform: scale(0.8);
+     }
+     25%{
+        transform: scale(1);
+     }
+     75%{
+        transform: scale(1.2);
+     }
+     100%{
+        transform: scale(1.5);
+     }
   }
