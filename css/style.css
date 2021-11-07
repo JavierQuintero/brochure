@@ -1,0 +1,15 @@
+*{
+    font-family: sans-serif;
+}
+.titulo {
+    max-width: 750px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 15px;
+    padding-top: 30px;
+    color: beige;
+    background-color: #5913a6;
+}
+.definicion{
+    max-width: 450;
+}
